@@ -16,6 +16,7 @@ logicFields:
   - grid_section.background_image_opacity
   - cta_section.background_image_opacity
   - form_section.background_image_opacity
+cmsName: git
 models:
   config:
     type: data
@@ -331,7 +332,8 @@ models:
     type: page
     label: Page
     layout: page
-    exclude: blog/**/*
+    exclude:
+      - blog/**/*
     fields:
       - type: string
         name: title
@@ -342,6 +344,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   post:
     type: page
     urlPath: '/blog/{slug}'
@@ -425,6 +428,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   advanced:
     type: page
     label: Advanced page
@@ -453,6 +457,7 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+        label: Seo
   hero_section:
     type: object
     label: Hero section
@@ -1567,6 +1572,9 @@ models:
       - type: list
         name: options
         description: 'The list of options, used only when the field type is "select"'
+        label: Options
+        items:
+          type: string
       - type: boolean
         name: is_required
         label: Is the field required?
@@ -1671,11 +1679,15 @@ models:
             - type: string
               name: name
               default: ''
+              label: Name
             - type: string
               name: value
               default: ''
+              label: Value
             - type: string
               name: keyName
               default: name
+              label: Key Name
             - type: boolean
               name: relativeUrl
+              label: Relative Url
