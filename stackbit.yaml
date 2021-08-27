@@ -1693,7 +1693,3 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
-  pagemodelstest:
-    type: page
-    label: pagemodelstest
-    layout: pagemodelstest
