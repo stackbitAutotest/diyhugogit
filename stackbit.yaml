@@ -1693,6 +1693,3 @@ models:
             - type: boolean
               name: relativeUrl
               label: Relative Url
-  objectmodelstest:
-    type: object
-    label: objectmodelstest
