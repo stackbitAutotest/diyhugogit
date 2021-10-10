@@ -1737,3 +1737,6 @@ models:
               name: relativeUrl
               label: Relative Url
     labelField: title
+  datamodelstest:
+    type: data
+    label: datamodelstest
